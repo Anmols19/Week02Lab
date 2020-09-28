@@ -17,11 +17,11 @@
              <table>
             <tr>
                 <td><h3>First</h3></td> 
-               <td><input type="text" value="${one}" name="one"</td>
+               <td><input type="text" value="${O}" name="one"</td>
             </tr>
             <tr>
                  <td><h3>Second</h3></td> 
-               <td><input type="text" value="${two}" name="two"</td>
+               <td><input type="text" value="${S}" name="two"</td>
             </tr>
             
             <tr>

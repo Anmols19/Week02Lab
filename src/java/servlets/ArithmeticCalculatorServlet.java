@@ -58,6 +58,8 @@ public class ArithmeticCalculatorServlet extends HttpServlet
              last= oneR+twoR; 
              X = Double.toString(last); 
              request.setAttribute("ans", X);
+              request.setAttribute("O", one);
+              request.setAttribute("S", two);
            getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);
            return;
          }
@@ -67,6 +69,8 @@ public class ArithmeticCalculatorServlet extends HttpServlet
              last= oneR-twoR; 
              X = Double.toString(last); 
              request.setAttribute("ans", X);
+               request.setAttribute("O", one);
+              request.setAttribute("S", two);
            getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);
            return;
          }
@@ -76,6 +80,8 @@ public class ArithmeticCalculatorServlet extends HttpServlet
              last= oneR*twoR; 
              X = Double.toString(last); 
              request.setAttribute("ans", X);
+               request.setAttribute("O", one);
+              request.setAttribute("S", two);
            getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);
            return;
          }
@@ -85,6 +91,8 @@ public class ArithmeticCalculatorServlet extends HttpServlet
              last= oneR%twoR; 
              X = Double.toString(last); 
              request.setAttribute("ans", X);
+             request.setAttribute("O", one);
+             request.setAttribute("S", two);
            getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);
            return;
          }
